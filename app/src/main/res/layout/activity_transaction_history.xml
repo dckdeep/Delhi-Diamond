@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context=".TransactionHistory">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Transaction History"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:background="@drawable/redshadow"
+        android:fontFamily="@font/abeezee"/>
+<!--<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+   android:gravity="center"
+    android:id="@+id/first_layout"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_height="40dp">
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="90dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent" />
+    <Spinner
+        android:id="@+id/planets_spinner2"
+        android:layout_width="90dp"
+        android:gravity="center"
+        android:layout_marginLeft="3dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent" />
+
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:text="Select Date"
+        android:layout_marginLeft="3dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:id="@+id/select_date"></Button>
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:layout_marginTop="3dp">
+    <Button
+        android:layout_width="150dp"
+        android:text="Submit"
+        android:id="@+id/get_history_submit"
+        android:textColor="#fff"
+        android:background="@drawable/redbox"
+        android:layout_height="match_parent" />
+</RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Select Date"
+            android:layout_marginLeft="3dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:id="@+id/select_date"></Button>
+    </RelativeLayout>
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:id="@+id/recycler_transaction_history"></android.support.v7.widget.RecyclerView>
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/no_game_yet"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fontFamily="@font/abeezee"
+      android:gravity="center"
+      android:textColor="#9C0404"
+      android:textSize="30dp"
+      android:textStyle="bold" />
+</RelativeLayout>

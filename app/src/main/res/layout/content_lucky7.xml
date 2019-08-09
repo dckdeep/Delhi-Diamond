@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Lucky7"
+    android:background="@drawable/lucky7bg"
+    tools:showIn="@layout/app_bar_lucky7">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/top_layout"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/lucky7_1_6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/redshadow"
+                android:scaleType="fitXY"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="2-6"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/abeezee"
+                />
+
+            <TextView
+                android:id="@+id/bet_lucky7_1_6"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/abeezee"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/lucky7_7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/redshadow"
+                android:scaleType="fitXY"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/abeezee"
+                />
+
+            <TextView
+                android:id="@+id/bet_lucky7_7"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/abeezee"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/lucky7_8_12"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/redshadow"
+                android:scaleType="fitXY"
+                android:gravity="center"
+                android:text="8-12"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:fontFamily="@font/abeezee"
+                />
+
+            <TextView
+                android:id="@+id/bet_lucky7_8_12"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/abeezee"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/top_layout"
+        android:layout_above="@id/bottom_layout"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/rolling_1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:padding="8dp"
+            android:src="@drawable/rollingdice_1"
+            />
+
+        <ImageView
+            android:id="@+id/rolling_2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="8dp"
+            android:src="@drawable/rollingdice_1"
+
+            android:layout_margin="20dp"
+            />
+  </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:id="@+id/bottom_up_layout"
+        android:orientation="vertical"
+
+        android:layout_marginBottom="3dp">
+       <!-- <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/login"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/rollDices"
+            android:fontFamily="@font/abeezee"
+            android:textAllCaps="false"
+            android:text="Press Here"/>-->
+      <!--  <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press Button For Dice Roll"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:fontFamily="@font/abeezee"
+            android:gravity="center"/>-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_up_layout"
+        android:id="@+id/bottom_layout"
+               android:layout_marginRight="12dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_border"
+            android:padding="5dp"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:gravity="center"
+                android:text="खेल के नियम"/>
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#256105"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="#ECE8E8"
+                android:text="2-6 के बीच जीतने पर डबल, 7 नंबर पर तीन गुना और 8-12 के बीच जीतने पर डबल मिलेंगे , 10 से कम की  बेट नहीं लगेगी ।"/>
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:text="कृपया ऊपर दिये गये वर्ग में से कोई एक चुनें ।"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lock_bid"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/lock_bid__icon"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="40dp"
+            android:id="@+id/lock_bid_text"
+            android:gravity="center|top"
+            android:textStyle="bold"
+            android:fontFamily="@font/abeezee"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@drawable/blue_border_check">
+    <CalendarView
+        android:background="#9B7BD6"
+        android:layout_width="match_parent"
+        android:id="@+id/calender"
+
+        android:layout_height="wrap_content"></CalendarView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:background="@drawable/redbox">
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="BidNo: "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:fontFamily="@font/abeezee"
+            android:gravity="center"/>-->
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="00"
+            android:id="@+id/jantri_number"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:fontFamily="@font/abeezee"
+            android:gravity="center|left"/>
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/redbox">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Coins: "
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:fontFamily="@font/abeezee"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="00"
+                android:id="@+id/jantri_coins"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:fontFamily="@font/abeezee"
+                android:gravity="center|left"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/redshadow"
+            android:text="Dlt."
+            android:id="@+id/delte"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:fontFamily="@font/abeezee"/>
+    </LinearLayout>
+
+</RelativeLayout>

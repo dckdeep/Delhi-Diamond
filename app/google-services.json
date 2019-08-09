@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "455695692032",
+    "firebase_url": "https://delhidiamond-402cb.firebaseio.com",
+    "project_id": "delhidiamond-402cb",
+    "storage_bucket": "delhidiamond-402cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455695692032:android:6f7b8be12ebf9099",
+        "android_client_info": {
+          "package_name": "com.technotion.delhidiamond"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455695692032-ghasmvcksdp4onsa06mrin3s08943u0a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technotion.delhidiamond",
+            "certificate_hash": "357b5bc6ac3f1c90c6f2acecbf46d583174b4fe8"
+          }
+        },
+        {
+          "client_id": "455695692032-5qtemnvbvb7qamc5u6pk719adgllsceh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-6iDpMPZdMLNQYhkveWBZx0MIh90MTC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455695692032-5qtemnvbvb7qamc5u6pk719adgllsceh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

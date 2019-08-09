@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game_Summary">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Summary"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:id="@+id/summm"
+        android:background="@drawable/redshadow"
+        android:fontFamily="@font/abeezee"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/summm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_transaction_details"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

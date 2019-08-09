@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/popup"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:id="@+id/show_result_popup"
+        android:layout_marginRight="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#850303"
+            android:textSize="15dp"
+            android:text="YOU WANT TO OPEN"
+            android:fontFamily="@font/abeezee"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:text="Text"
+            android:id="@+id/Number_display"
+            android:fontFamily="@font/abeezee"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#850303"
+            android:textSize="15dp"
+            android:text="FOR THE AMOUNT"
+            android:fontFamily="@font/abeezee"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:text="Text"
+            android:id="@+id/Number_display_amount"
+            android:fontFamily="@font/abeezee"
+            />
+
+              <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Number_display"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="15dp">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/login"
+                android:text="Cancel"
+                android:textColor="#fff"
+                android:id="@+id/cancel_action"
+                android:textAllCaps="false"
+                android:fontFamily="@font/abeezee"
+                />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/login"
+                android:text="Show"
+                android:id="@+id/show_action"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:fontFamily="@font/abeezee"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

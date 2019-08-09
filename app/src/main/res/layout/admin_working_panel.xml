@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+          <!--  <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/start_layout"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_marginRight="3dp"
+                    android:layout_width="170dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/black_border">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/agent_name"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:fontFamily="@font/abeezee"
+                        android:textColor="#832D05"
+                        android:text="Agent_name"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>-->
+
+            <LinearLayout
+                android:id="@+id/first_layout"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginRight="3dp"
+                    android:layout_width="170dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/black_border">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:fontFamily="@font/abeezee"
+                        android:textColor="#045F08"
+                        android:text="Total Coins:"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/current_tokens"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/abeezee"
+                        android:textColor="#000"
+                        android:text="0"/>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Refresh"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#fff"
+                    android:id="@+id/ref"
+                    android:textAllCaps="false"
+                    android:background="@drawable/blue_border"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="130dp"
+                            android:gravity="center"
+                            android:id="@+id/patti_button"
+                            android:layout_height="120dp"
+                            android:background="@drawable/home_background">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="60dp"
+                                    android:layout_height="40dp"
+                                    android:text="Users:"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="15dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/abeezee"
+                                    android:gravity="center|left"
+                                    android:id="@+id/onethree_patti_users"
+                                    android:text="0"
+                                    android:textColor="#fff"
+                                    android:textSize="20dp" />
+                            </LinearLayout>
+
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:fontFamily="@font/abeezee"
+                                android:scaleType="fitCenter"
+                                android:id="@+id/onethree_patti"
+                                 />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="30dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/chidiya_button"
+                            android:layout_width="130dp"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:background="@drawable/home_background">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="60dp"
+                                    android:layout_height="40dp"
+                                    android:text="Users:"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="15dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:text="0"
+                                    android:fontFamily="@font/abeezee"
+                                    android:id="@+id/chidiya_button_users"
+                                    android:textSize="20dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center|left"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:scaleType="fitXY"
+                                android:id="@+id/birds"
+                                 />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/lucky7_button"
+                            android:layout_width="130dp"
+                            android:gravity="center"
+                            android:layout_height="120dp"
+                            android:background="@drawable/home_background">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="60dp"
+                                    android:layout_height="40dp"
+                                    android:text="Users:"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="15dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:text="0"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="20dp"
+                                    android:id="@+id/lucky7_button_users"
+                                    android:textColor="#fff"
+                                    android:gravity="center|left"/>
+                            </LinearLayout>
+                            <ImageView
+                                android:fontFamily="@font/abeezee"
+                                android:textColor="#000"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:id="@+id/lucky7"
+
+                                android:scaleType="fitXY"  />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="30dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/delhi_diamond_button"
+                            android:layout_width="130dp"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:background="@drawable/home_background">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="60dp"
+                                    android:layout_height="40dp"
+                                    android:text="Users:"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="15dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:text="0"
+                                    android:id="@+id/delhi_diamond_button_users"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="20dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center|left"/>
+                            </LinearLayout>
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:id="@+id/delhi_diamond"
+
+                                android:scaleType="fitXY"  />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/faridabad_button"
+                            android:layout_width="130dp"
+                            android:gravity="center"
+                            android:layout_height="120dp"
+                            android:background="@drawable/home_background">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="60dp"
+                                    android:layout_height="40dp"
+                                    android:text="Users:"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="15dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:text="0"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="20dp"
+                                    android:id="@+id/faridabad_button_users"
+                                    android:textColor="#fff"
+                                    android:gravity="center|left"/>
+                            </LinearLayout>
+                            <ImageView
+                                android:fontFamily="@font/abeezee"
+                                android:textColor="#000"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:id="@+id/faridabad"
+
+                                android:scaleType="fitXY"  />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="30dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/ghaziabad_button"
+                            android:layout_width="130dp"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:background="@drawable/home_background">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="60dp"
+                                    android:layout_height="40dp"
+                                    android:text="Users:"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="15dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:text="0"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="20dp"
+                                    android:id="@+id/ghaziabad_button_users"
+                                    android:textColor="#fff"
+                                    android:gravity="center|left"/>
+                            </LinearLayout>
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+
+                                android:id="@+id/ghaziabad"
+                                android:scaleType="fitXY"  />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/gali_button"
+                            android:layout_width="130dp"
+                            android:gravity="center"
+                            android:layout_height="120dp"
+                            android:background="@drawable/home_background">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="60dp"
+                                    android:layout_height="40dp"
+                                    android:text="Users:"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="15dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:text="0"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="20dp"
+                                    android:id="@+id/gali_button_users"
+                                    android:textColor="#fff"
+                                    android:gravity="center|left"/>
+                            </LinearLayout>
+                            <ImageView
+                                android:fontFamily="@font/abeezee"
+                                android:textColor="#000"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+
+                                android:id="@+id/gali"
+                                android:scaleType="fitXY"  />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="30dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/desawar_button"
+                            android:layout_width="130dp"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:background="@drawable/home_background">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="60dp"
+                                    android:layout_height="40dp"
+                                    android:text="Users:"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="15dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:text="0"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="20dp"
+                                    android:id="@+id/desawar_button_users"
+                                    android:textColor="#fff"
+                                    android:gravity="center|left"/>
+                            </LinearLayout>
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+
+                                android:id="@+id/desawar"
+                                android:scaleType="fitXY"  />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/ajent_dashboard_points_display"
+                            android:layout_width="130dp"
+                            android:gravity="center"
+                            android:layout_height="120dp"
+                            android:background="@drawable/home_background">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:text="Check Your coins View"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="15dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+                            <ImageView
+                                android:fontFamily="@font/abeezee"
+                                android:textColor="#000"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+
+                                android:id="@+id/check_coins"
+                                android:scaleType="fitCenter"  />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="30dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/List_of_users"
+                            android:layout_width="130dp"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:background="@drawable/home_background">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:text="List of Users"
+                                    android:fontFamily="@font/abeezee"
+                                    android:textSize="15dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+
+                                android:id="@+id/list_of_users"
+                                android:scaleType="fitXY"  />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

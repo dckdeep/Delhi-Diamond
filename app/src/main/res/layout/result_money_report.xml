@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/coins_report_scrolling">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ffff"
+            android:padding="5dp">
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:id="@+id/refresh_coins"
+                android:background="@drawable/blue_border"
+                android:text="Refresh"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/abeezee"
+                android:layout_alignParentRight="true"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/first_layout"
+                android:layout_marginBottom="5dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Money Report"
+                    android:gravity="center"
+                    android:id="@+id/heading_text"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/abeezee"
+                    android:textColor="#044B06"
+                    android:background="@drawable/black_border"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_below="@id/ffff"
+                android:id="@id/last_layout"
+                android:scrollbars="horizontal">
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_below="@id/first_layout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nos_recycler_view"
+                        android:layout_below="@id/refresh_coins"
+                        android:nestedScrollingEnabled="false"
+                        ></android.support.v7.widget.RecyclerView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/vertical_layout_number"
+                            android:nestedScrollingEnabled="false"></android.support.v7.widget.RecyclerView>
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"
+                            android:layout_below="@id/vertical_layout_number"
+                            android:id="@+id/coins_report_recycler_view"
+                            android:background="@drawable/black_whiteblack_border"
+
+                            ></android.support.v7.widget.RecyclerView>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            </HorizontalScrollView>
+            </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/last_layout"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/abeezee"
+                android:gravity="center"
+                android:text="MAX Profit NO."
+                android:textColor="#B90606"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/abeezee"
+                android:gravity="center"
+                android:text="---"
+                android:id="@+id/max_open"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

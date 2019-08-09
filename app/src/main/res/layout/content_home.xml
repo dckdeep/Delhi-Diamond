@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home"
+
+    android:background="@drawable/bg"
+    tools:showIn="@layout/app_bar_home">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/first__layout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ffrst_layout"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_border"
+                android:text="Refresh"
+                android:id="@+id/ref"
+                android:textColor="#fff"
+                android:fontFamily="@font/abeezee"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_below="@+id/ffrst_layout"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:id="@+id/player_name"
+                android:fontFamily="@font/abeezee"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/redbox"
+                android:text="Player_name"/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center|right"
+                android:background="@drawable/redbox"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/check_coins"
+
+                    android:scaleType="fitCenter"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="000000"
+                    android:gravity="center|left"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:id="@+id/current_coins"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/abeezee"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/home_delhi_diamond_button"
+                    android:layout_width="130dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/home_background"
+                    android:scaleType="fitXY"
+                   />
+
+                <TextView
+                    android:id="@+id/home_delhi_diamond"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/abeezee"
+                    android:gravity="center"
+                    android:text="13 Patti"
+                    android:textStyle="bold"
+                    android:textColor="#832D05"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/second_game"
+                    android:layout_width="130dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/home_background"
+                    android:scaleType="fitXY"
+
+                     />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/abeezee"
+                    android:gravity="center"
+                    android:text="Chidiya  kabutar"
+                    android:textColor="#832D05"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="130dp"
+                    android:layout_height="170dp"
+                    android:id="@+id/Lucky7"
+                    android:background="@drawable/home_background"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/abeezee"
+                    android:gravity="center"
+                    android:text="Lucky 7"
+                    android:textStyle="bold"
+                    android:textColor="#832D05"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="130dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/home_background"
+                    android:scaleType="fitXY"
+                    android:id="@+id/delhi_diamond"
+                    />
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="170dp"
+                        android:gravity="center"
+                        android:text="23"
+                        android:id="@+id/delhi_diamond_result"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/abeezee"
+                        android:textSize="60dp"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/abeezee"
+                    android:gravity="center"
+                    android:text="Delhi Diamond"
+                    android:textColor="#832D05"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginRight="30dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <ImageButton
+                            android:layout_width="130dp"
+                            android:layout_height="170dp"
+                            android:background="@drawable/home_background"
+                            android:scaleType="fitXY"
+                            android:id="@+id/faridabad"
+                           />
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="170dp"
+                                android:gravity="center"
+                                android:text="23"
+                                android:textColor="#fff"
+                                android:textStyle="bold"
+                                android:id="@+id/faridabad_result"
+                                android:fontFamily="@font/abeezee"
+                                android:textSize="60dp"/>
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:fontFamily="@font/abeezee"
+                            android:gravity="center"
+                            android:text="Faridabad"
+                            android:textColor="#832D05"
+                            android:textStyle="bold"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <ImageButton
+                            android:layout_width="130dp"
+                            android:layout_height="170dp"
+                            android:id="@+id/ghaziabad"
+
+                            android:background="@drawable/home_background"
+                            android:scaleType="fitXY"
+                            />
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="170dp"
+                                android:gravity="center"
+                                android:text="23"
+                                android:textColor="#fff"
+                                android:id="@+id/ghaziabad_result"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/abeezee"
+                                android:textSize="60dp"/>
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:fontFamily="@font/abeezee"
+                            android:gravity="center"
+                            android:text="Ghaziabad"
+                            android:textStyle="bold"
+                            android:textColor="#832D05"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <ImageButton
+                            android:id="@+id/gali"
+                            android:layout_width="130dp"
+                            android:layout_height="170dp"
+                            android:background="@drawable/home_background"
+                            android:scaleType="fitXY"
+                            />
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="170dp"
+                                android:gravity="center"
+                                android:text="23"
+                                android:id="@+id/gali_result"
+                                android:textColor="#fff"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/abeezee"
+                                android:textSize="60dp"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/gali_text"
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:fontFamily="@font/abeezee"
+                            android:gravity="center"
+                            android:text="Gali"
+                            android:textStyle="bold"
+                            android:textColor="#832D05"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="30dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <ImageButton
+                            android:id="@+id/desawar"
+                            android:layout_width="130dp"
+                            android:layout_height="170dp"
+                            android:background="@drawable/home_background"
+                            android:scaleType="fitXY"
+                            />
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="170dp"
+                                android:gravity="center"
+                                android:text="23"
+                                android:id="@+id/desawar_result"
+                                android:textColor="#fff"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/abeezee"
+                                android:textSize="60dp"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:fontFamily="@font/abeezee"
+                            android:gravity="center"
+                            android:text="Desawar"
+                            android:textColor="#832D05"
+                            android:textStyle="bold"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

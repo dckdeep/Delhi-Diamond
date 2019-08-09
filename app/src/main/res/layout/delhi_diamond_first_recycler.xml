@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/delhi_diamond_recycler_first_text"
+            android:text="1"/>
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:inputType="number"
+            android:id="@+id/delhi_diamond_recycler_first_edittext"
+            />
+    </LinearLayout>
+</RelativeLayout>

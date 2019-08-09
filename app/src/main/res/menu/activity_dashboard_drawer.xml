@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home"/>
+    </group>
+    <item android:title="Report">
+        <menu>
+            <item
+                android:id="@+id/points_report"
+                android:title="Game Report" />
+            <item
+                android:id="@+id/coins_report"
+                android:title="Coins Report" />
+          <!--
+            <item
+                android:id="@+id/all_summary_report"
+                android:title="All Summary Report" />
+            <item
+                android:id="@+id/declared_transactions"
+                android:title="Declared Transactions" />
+            <item
+                android:id="@+id/declare_report"
+                android:title="Declare Report" />-->
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout_black_24dp"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

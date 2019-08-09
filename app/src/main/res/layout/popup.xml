@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/What_we_do"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:background="#0000ffff"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:background="#0000ffff"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/popup"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/close"
+                        android:scaleType="centerCrop"
+                        android:background="#fff"
+                        android:id="@+id/close_popup"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:id="@+id/place_bet_layout"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:text="Placed Bet :"
+                    android:textColor="#256105" />
+                    <TextView
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#256105" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hinditext"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:text="जीतने पर 10 के 120 पॉइंट्स मिलेंगे"
+                    android:textColor="#000"
+                    />
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:met_floatingLabel="normal"
+                        android:inputType="number"
+                        android:id="@+id/bet_point"
+                        android:hint="Enter Amount"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Remove BID"
+                        android:id="@+id/less_bet_point"
+                        android:textColor="#fff"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/login"/>
+                    <Button
+                        android:layout_marginRight="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:id="@+id/add_bet_point"
+                        android:textColor="#fff"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/login"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:gravity="center|bottom"
+                 android:layout_height="150dp" >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/popup_image" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

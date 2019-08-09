@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PointsReport"
+    android:padding="10dp"
+    android:background="@drawable/login_bg"
+    tools:showIn="@layout/app_bar_points_report">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/points_report_layout"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/total_amount"
+        android:text="Detail Report"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:background="@drawable/redshadow"
+        android:fontFamily="@font/abeezee"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/first_layout"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_height="40dp">
+            <Spinner
+                android:id="@+id/select_game"
+                android:layout_width="150dp"
+                android:gravity="center"
+
+                android:layout_marginLeft="3dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent" />
+
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Select Date"
+                android:layout_marginLeft="3dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:id="@+id/select_date"></Button>
+        </LinearLayout>
+
+
+
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/user_transaction_details"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="#9C0404"
+        android:textSize="30dp"
+        android:id="@+id/no_game_yet"
+        android:fontFamily="@font/abeezee"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

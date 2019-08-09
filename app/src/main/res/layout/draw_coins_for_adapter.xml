@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="#fff"
+      android:layout_margin="3dp">
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:id="@+id/points_count"
+        android:textColor="#000"
+        android:text="20,000"
+        android:textStyle="bold"
+        android:padding="2dp"
+        android:gravity="center"
+        android:textSize="8dp"
+        />
+  </RelativeLayout>
+
+</RelativeLayout>

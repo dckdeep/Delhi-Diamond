@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DelhiDiamond"
+    android:background="#D266340D"
+
+    tools:showIn="@layout/app_bar_delhi_diamond">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:id="@+id/first_layout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:id="@+id/game_logo_inside"
+            android:background="@drawable/game_inside_background" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/black_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/abeezee"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="TOTAL (Coins)"
+                android:textColor="#832D05"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/title_img"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/total_coins"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:gravity="center|left"
+            android:textColor="#000"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/send_points"
+            android:text="0"
+            android:textSize="18dp" />
+        </LinearLayout>
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:background="@drawable/game_inside_background"
+            android:text="24:00:00"
+            android:textSize="15dp"
+            android:id="@+id/game_timer_id"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#0F0F0F"
+            android:fontFamily="@font/abeezee"/>-->
+    </LinearLayout>
+ <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center|left"
+        android:layout_below="@id/first_layout"
+        android:id="@+id/second_layout"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/black_border"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/abeezee"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Number"
+                    android:textColor="#832D05"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/title_img"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/black_border"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/abeezee"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Amount"
+                    android:textColor="#832D05"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/title_img"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_below="@id/first_layout"
+        android:id="@+id/thrid_layout"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/black_border"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/bid_number"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:hint="Number"
+                    android:inputType="number"
+                    android:textSize="15dp"
+                    android:background="@drawable/black_border"
+                    android:padding="8dp"
+                    android:layout_marginRight="3dp"
+                    android:nextFocusRight="@id/Amount_entered"
+                    app:met_floatingLabel="normal" />
+
+            <EditText
+                android:id="@+id/Amount_entered"
+                android:layout_width="130dp"
+                android:background="@drawable/black_border"
+                android:layout_height="40dp"
+                android:hint="Amount"
+                android:layout_marginLeft="3dp"
+                android:textSize="15dp"
+                android:paddingLeft="8dp"
+                app:met_floatingLabel="normal" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="60dp"
+android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="40dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/login"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:id="@+id/add_button_delhi_diamond"
+                android:fontFamily="@font/abeezee"
+                />
+        </LinearLayout>
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="#000"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/fourth_layout"
+    android:layout_below="@id/thrid_layout"></RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_display_number_with_amount"
+       android:layout_above="@id/last_layout"
+        android:layout_below="@id/fourth_layout"
+        android:background="@drawable/bg"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:id="@+id/last_layout"
+        android:layout_alignParentBottom="true"
+       >
+        <Spinner
+            android:id="@+id/planets_spinner"
+            android:layout_width="150dp"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Save Transaction"
+            android:id="@+id/save_all_values"
+            android:textAllCaps="false"
+            android:textSize="15dp"/>
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

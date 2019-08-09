@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_border"
+        android:padding="3dp"
+        android:id="@+id/view_full_report"
+        android:layout_below="@id/points_report_layout"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/redbox"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:id="@+id/date_and_time"
+                android:fontFamily="@font/abeezee"
+                android:text="Date :- DD:MM:YYYY"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="4dp"
+                   android:background="@drawable/black_border">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/card_display"
+                    android:src="@drawable/check_coins"/>
+               </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="330dp"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/abeezee"
+                                android:gravity="center"
+                                android:paddingLeft="3dp"
+                                android:textAllCaps="true"
+                                android:text="Win OR LOSE"
+                                android:id="@+id/user_name"
+                                android:textColor="#832D05 " />
+
+                        </LinearLayout>
+                      <!--  <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:text="Send Coins"
+                                android:id="@+id/transaction_type"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:fontFamily="@font/abeezee"
+                                android:textColor="#E70823"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:text="0"
+                                android:id="@+id/coins_transfer"
+                                android:textColor="#000"
+                                android:gravity="center"/>
+                        </LinearLayout>-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="330dp"
+                        android:layout_height="30dp"
+
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="165dp"
+                            android:layout_height="25dp"
+                            android:textStyle="bold"
+                            android:text="Coins:- "
+                            android:id="@+id/change_coins_text"
+                            android:gravity="center|right"
+                            android:fontFamily="@font/abeezee"
+                            android:textColor="#045F08"/>
+                        <TextView
+                            android:layout_width="165dp"
+                            android:layout_height="25dp"
+                            android:text="0"
+                            android:paddingLeft="3dp"
+                            android:textColor="#000"
+                            android:id="@+id/closing_amount"
+                            android:gravity="center|left"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
